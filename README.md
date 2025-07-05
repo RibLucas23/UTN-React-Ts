@@ -1,69 +1,86 @@
-# React + TypeScript + Vite
+# 🛒 Ecommerce UTN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto de ecommerce desarrollado como parte de la primera etapa de la diplomatura en desarrollo Fullstack de la UTN. Esta etapa se centra en el uso de **ReactJS**, aplicando buenas prácticas de desarrollo frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+-  ⚛️ React
+-  ⚡ Vite
+-  🎨 Tailwind CSS
+-  🌸 DaisyUI
+-  🖼️ Lucide Icons
+-  🌐 React Router DOM
+-  🛍️ FakeStoreAPI (API de productos)
+-  🔄 useState, useEffect para manejo de estado y efectos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> En próximas clases se integrará **Firebase** para autenticación y funcionalidad de carrito de compras.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Funcionalidades actuales
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-  Visualización de productos con paginación
+-  Vista detallada por producto (`/product/:id`)
+-  Login y Registro con validaciones personalizadas
+-  Diseño responsive adaptado a mobile y desktop
+-  Navegación mediante React Router
+
+---
+
+## ⚙️ Cómo correr el proyecto localmente
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/RibLucas23/UTN-React.git
+
+# 2. Ingresar al directorio del proyecto
+cd UTN-React
+
+# 3. Instalar dependencias
+npm install
+
+# 4. Ejecutar el proyecto en desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+El servidor se abrirá, por defecto, en http://localhost:5173.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✨ Funcionalidades actuales
+
+✅ Listado de productos con diseño responsive
+
+✅ Vista de detalle por producto (/product/:id)
+
+✅ Hero con imagen destacada y llamado a la acción
+
+✅ Paginación de productos con scroll automático al top
+
+✅ Login y Registro con formularios validados manualmente
+
+✅ Alternancia de visibilidad para contraseñas
+
+✅ Navegación con React Router DOM
+
+---
+
+## 📦 Próximas funcionalidades
+
+🔐 Autenticación y sesión con Firebase
+
+🛒 Carrito de compras persistente
+
+⭐ Favoritos y/o historial de compras
+
+🌐 Conexión con base de datos en tiempo real (Firebase Firestore)
+
+---
+
+## 👨‍💻 Autor
+
+### Lucas Ribeiro
+
+Proyecto desarrollado para la Diplomatura Fullstack de la UTN (2025)
